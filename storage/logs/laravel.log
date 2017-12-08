@@ -1,0 +1,62 @@
+[2017-12-08 16:56:07] production.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "server.php" is not defined. in /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/symfony/console/Application.php:536
+Stack trace:
+#0 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/symfony/console/Application.php(184): Symfony\Component\Console\Application->find('server.php')
+#1 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/symfony/console/Application.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(121): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
+[2017-12-08 16:57:53] production.ERROR: ErrorException: file_get_contents(/media/vinicius/Data/workspace/TravisCI/delivery-heroku/.env): failed to open stream: No such file or directory in /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php:57
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'file_get_conten...', '/media/vinicius...', 57, Array)
+#1 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php(57): file_get_contents('/media/vinicius...')
+#2 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php(39): Illuminate\Foundation\Console\KeyGenerateCommand->setKeyInEnvironmentFile('base64:koGn+w2H...')
+#3 [internal function]: Illuminate\Foundation\Console\KeyGenerateCommand->fire()
+#4 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/bootstrap/cache/compiled.php(1271): call_user_func_array(Array, Array)
+#5 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/laravel/framework/src/Illuminate/Console/Command.php(169): Illuminate\Container\Container->call(Array)
+#6 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/symfony/console/Command/Command.php(256): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/laravel/framework/src/Illuminate/Console/Command.php(155): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/symfony/console/Application.php(820): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/symfony/console/Application.php(187): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Foundation\Console\KeyGenerateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/symfony/console/Application.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(121): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main}  
+[2017-12-08 16:59:33] production.ERROR: ErrorException: file_get_contents(/media/vinicius/Data/workspace/TravisCI/delivery-heroku/.env): failed to open stream: No such file or directory in /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php:57
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'file_get_conten...', '/media/vinicius...', 57, Array)
+#1 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php(57): file_get_contents('/media/vinicius...')
+#2 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php(39): Illuminate\Foundation\Console\KeyGenerateCommand->setKeyInEnvironmentFile('base64:orlT3cXD...')
+#3 [internal function]: Illuminate\Foundation\Console\KeyGenerateCommand->fire()
+#4 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/bootstrap/cache/compiled.php(1271): call_user_func_array(Array, Array)
+#5 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/laravel/framework/src/Illuminate/Console/Command.php(169): Illuminate\Container\Container->call(Array)
+#6 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/symfony/console/Command/Command.php(256): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/laravel/framework/src/Illuminate/Console/Command.php(155): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/symfony/console/Application.php(820): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/symfony/console/Application.php(187): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Foundation\Console\KeyGenerateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/symfony/console/Application.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(121): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main}  
+[2017-12-08 17:24:52] production.ERROR: ErrorException: file_get_contents(/media/vinicius/Data/workspace/TravisCI/delivery-heroku/.env): failed to open stream: No such file or directory in /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php:57
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'file_get_conten...', '/media/vinicius...', 57, Array)
+#1 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php(57): file_get_contents('/media/vinicius...')
+#2 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php(39): Illuminate\Foundation\Console\KeyGenerateCommand->setKeyInEnvironmentFile('base64:ndyYaXbx...')
+#3 [internal function]: Illuminate\Foundation\Console\KeyGenerateCommand->fire()
+#4 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/bootstrap/cache/compiled.php(1271): call_user_func_array(Array, Array)
+#5 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/laravel/framework/src/Illuminate/Console/Command.php(169): Illuminate\Container\Container->call(Array)
+#6 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/symfony/console/Command/Command.php(256): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/laravel/framework/src/Illuminate/Console/Command.php(155): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/symfony/console/Application.php(820): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/symfony/console/Application.php(187): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Foundation\Console\KeyGenerateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/symfony/console/Application.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(121): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main}  
+[2017-12-08 17:25:47] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "server.php" is not defined. in /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/symfony/console/Application.php:536
+Stack trace:
+#0 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/symfony/console/Application.php(184): Symfony\Component\Console\Application->find('server.php')
+#1 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/symfony/console/Application.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(121): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /media/vinicius/Data/workspace/TravisCI/delivery-heroku/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
